@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yonhost Billing Panel</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            overflow: hidden;
+            background-image: url('https://pomf2.lain.la/f/jqgy27mz.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 20px;
+            z-index: 2;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 50px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            width: auto;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
+        }
+
+        .cube {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            transform-style: preserve-3d;
+            animation: rotate 6s infinite linear;
+            top: -250px;
+            z-index: 1;
+        }
+
+        .cube div {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(
+            rgba(255, 0, 0, 0.6), 
+            rgba(255, 0, 0, 0.8)
+            );
+            border: 2px solid rgba(0, 0, 0, 0.8); 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); 
+        }
+
+        .front  { transform: translateZ(50px); }
+        .back   { transform: rotateY(180deg) translateZ(50px); }
+        .right  { transform: rotateY(90deg) translateZ(50px); }
+        .left   { transform: rotateY(-90deg) translateZ(50px); }
+        .top    { transform: rotateX(90deg) translateZ(50px); }
+        .bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+        @keyframes rotate {
+            from { transform: rotateX(0deg) rotateY(0deg); }
+            to   { transform: rotateX(360deg) rotateY(360deg); }
+        }
+
+        .copyright {
+            color: white;
+            font-size: 12px;
+            margin-top: 20px;
+            opacity: 0.7;
+            text-align: center;
+        }
+
+        .title {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            z-index: 2;
+            padding: 10px 30px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            backdrop-filter: blur(15px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+     
+        <div class="cube">
+            <div class="front"></div>
+            <div class="back"></div>
+            <div class="right"></div>
+            <div class="left"></div>
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+
+      
+        <div class="title">Yonhost Product</div>
+
+        
+        <div class="btn-container"> 
+            <a href="wa.me/6282131902807?text=aku+raisoh+sek,+mergo" class="btn" target="_blank">alesanmu opo</a>
+        </div>
+
+       
+        <div class="copyright">
+            Yonhost ©2023-2024
+        </div>
+    </div>
+
+</body>
+</html>
